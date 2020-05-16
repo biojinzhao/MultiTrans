@@ -8,7 +8,7 @@ C++, Python, and  Gurobi are required to be installed.
 To use the paired-end information of assembly graphs, BWA is also required to be installed.
 
 
-### Quick Start
+### Quick start
 
 **Assembly graph
 
@@ -34,3 +34,9 @@ python MultiTran.py -m 2 -g /path/to/splicing/graph/RawGraphs_/
  --test (or -t): testing the software
    
  --help (or -h): MultiTrans usage
+
+
+### Contact us
+
+zhaojin@mail.sdu.edu.cn
+
