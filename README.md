@@ -11,9 +11,11 @@ To use the paired-end information of assembly graphs, BWA is also required to be
 ### Quick Start
 
 **Assembly graph
+
 python /path/to/MultiTran.fa -m 1 -g /path/to/assembly/graph/assembly_graph_with_scaffolds.gfa
 
 **Splicing graph
+
 python /path/to/MultiTran.fa -m 2 -g /path/to/splicing/graph/RawGraphs_/
 
 
