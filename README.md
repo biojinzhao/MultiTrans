@@ -23,9 +23,7 @@ python MultiTran.py -m 2 -g /path/to/splicing/graph/RawGraphs_/
 
  --model (or -m) <int>: 1 assembly graph, 2 splcing graph
  
- --graph_file (or -g) <string>: *.gfa file of assembly graph
- 
-                             or  directory of splicing graph
+ --graph_file (or -g) <string>: *.gfa file of assembly graph  or  directory of splicing graph
                                 
  --out_dir (or -o): directory of output
  
