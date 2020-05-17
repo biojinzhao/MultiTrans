@@ -1,4 +1,9 @@
-# MultiTrans
+# MultiTrans 
+
+
+### About MultiTrans
+
+MultiTrans is a tool for transcripts assmebly, which formulated the transcripts assembly problem into a mixed integer linear programming. 
 
 
 ### Prerequistites 
