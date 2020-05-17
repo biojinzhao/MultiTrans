@@ -43,7 +43,5 @@ python MultiTran.py -m 2 -g /path/to/splicing/graph/RawGraphs_/
 
 ### Feedback and bug reports
 
-Your comments, bug reports, and suggestions are very welcomed. They will help us to further improve MultiTrans. If you have any troubles running MultiTrans, please contact us (zhaojin@mail.sdu.edu.cn).
-
-zhaojin@mail.sdu.edu.cn
+Your comments, bug reports, and suggestions are very welcomed. They will help us to further improve MultiTrans. If you have any troubles running MultiTrans, please contact us (Email: zhaojin@mail.sdu.edu.cn).
 
