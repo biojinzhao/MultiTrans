@@ -113,9 +113,9 @@ if is_test == 1:
 	print('solving mixed integer linear programming...')
 	command = 'python '+MultiTrans_dir+'/write_program_assembly.py -in ' + out_dir + 'graph.info -u' + str(u) 
 	os.system(command) 
-	print("The assembled transcripts are stored in ")
-	print('\''+out_dir + "MultiTrans.fa\'")
-	print("Your job is finished! Thanks for using MultiTrans!")
+	print("\n====== MultiTrans pipeline finished.\n")
+	print("The assembled transcripts can be found here: "+out_dir+"MultiTrans.fa\n")
+	print("Thank you for using MultiTrans!\n")
 	sys.exit(-1)
 
 command = "mkdir " + out_dir + "MultiTrans_Out_Dir"
@@ -161,9 +161,9 @@ if model == '2': #splicing graph
 	command = 'python '+MultiTrans_dir+'/write_program_splicing.py -in ' + out_dir + 'graph.info -u' + str(u)
 	os.system(command)  
 
-print("The assembled transcripts are stored in ")
-print('\''+out_dir + "MultiTrans.fa\'")
-print("Your job is finished! Thanks for using MultiTrans!")
+print("\n====== MultiTrans pipeline finished.\n")
+print("The assembled transcripts can be found here: "+out_dir+"MultiTrans.fa\n")
+print("Thank you for using MultiTrans!\n")
 
 
 
