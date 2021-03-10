@@ -41,7 +41,7 @@ python MultiTran.py -m 2 -g /path/to/splicing/graph/RawGraphs_/
  --help (or -h): MultiTrans usage
 
 
-###### Extracting common transcripts from multiple transcriptome.fa ############
+### Extracting common transcripts from multiple transcriptome.fa ############
 
 ### Example
 
