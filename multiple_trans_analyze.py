@@ -51,12 +51,16 @@ if len(merge_str) > 0:
 
 trans_vec = []
 trans_name = []
+current_tran = ''
 for lines in open(trans_file_list[0]):
     if lines[0] == '>':
+        if len(current_tran) > 0:
+            trans_vec = trans_vec + [current_tran]
         trans_name = trans_name + [lines[1:len(lines)-1]]
+        current_tran = ''
     else:
-        trans_vec = trans_vec + [lines[0:len(lines)-1]]
-
+        current_tran = current_tran + lines[0:len(lines)-1]
+trans_vec = trans_vec + [current_tran]
 for i in range(len(trans_file_list)-1):
     temp_trans = []
     temp_name = []
@@ -64,14 +68,21 @@ for i in range(len(trans_file_list)-1):
     current_tran = ''
     for lines in open(trans_file_list[i+1]):
         if lines[0] == '>':
+            if len(current_tran) > 0:
+                if current_tran in trans_vec:
+                    idx = trans_vec.index(current_tran)
+                    temp_trans = temp_trans + [current_tran]
+                    new_name = trans_name[idx] + ',' + current_name
+                    temp_name = temp_name + [new_name]
             current_name = lines[1:len(lines)-1]
+            current_tran = ''
         else:
-            current_tran = lines[0:len(lines)-1]
-            if current_tran in trans_vec:
-                idx = trans_vec.index(current_tran)
-                temp_trans = temp_trans + [current_tran]
-                new_name = trans_name[idx] + ',' + current_name
-                temp_name = temp_name + [new_name]
+            current_tran = current_tran + lines[0:len(lines)-1]
+    if current_tran in trans_vec:
+        idx = trans_vec.index(current_tran)
+        temp_trans = temp_trans + [current_tran]
+        new_name = trans_name[idx] + ',' + current_name
+        temp_name = temp_name + [new_name]
     trans_vec = temp_trans
     trans_name = temp_name
 
