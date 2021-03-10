@@ -41,6 +41,18 @@ python MultiTran.py -m 2 -g /path/to/splicing/graph/RawGraphs_/
  --help (or -h): MultiTrans usage
 
 
+###### Extracting common transcripts from multiple transcriptome.fa ############
+
+### Example
+
+python multiple_trans_analyze.py -t trans1.fa,trans2.fa,trans3.fa -o /out_dir/
+
+### Usage
+
+ --transcripts_file_list (or -t): list of transcriptome.fa separated by commas
+ --out_dir (or -o): directory of output
+
+
 ### Feedback and bug reports
 
 Your comments, bug reports, and suggestions are very welcomed. They will help us to further improve MultiTrans. If you have any troubles running MultiTrans, please contact us (Email: zhaojin@mail.sdu.edu.cn).
