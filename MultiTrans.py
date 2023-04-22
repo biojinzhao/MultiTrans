@@ -4,7 +4,6 @@
 from __future__ import print_function
 import sys
 import re
-import commands
 import os
 import time
 
