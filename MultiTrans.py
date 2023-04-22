@@ -98,8 +98,8 @@ if is_test == 1:
 	command = 'python '+MultiTrans_dir+'/write_program_splicing.py -in ' + out_dir + 'graph.info -u' + str(u)
 	os.system(command) 
 	print("Success!")
- 	graph_file = MultiTrans_dir + '/test/assembly_graph_with_scaffolds.gfa'
- 	reads_file1 =  MultiTrans_dir + '/test/reads_1.fastq'
+	graph_file = MultiTrans_dir + '/test/assembly_graph_with_scaffolds.gfa'
+	reads_file1 =  MultiTrans_dir + '/test/reads_1.fastq'
 	reads_file2 =  MultiTrans_dir + '/test/reads_2.fastq'
 	command = MultiTrans_dir+'/node_seq -g ' + graph_file + ' -o ' + out_dir
 	os.system(command) 
